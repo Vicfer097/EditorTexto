@@ -5,17 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Editor de Texto</title>
     <link rel="stylesheet" href="/Styles/styles.css">
+    <script src="JS/formato.js"></script>
 </head>
 <body>
     <div class="editor">
         <div class="toolbar">
-            <button id="boldButton" title="Negritas"><b>B</b></button>
-            <button id="italicButton" title="Cursiva"><i>I</i></button>
-            <button id="underlineButton" title="Subrayado"><u>U</u></button>
-            <button id="strikeButton" title="Tachado"><s>S</s></button>
-            <button id="alignLeftButton" title="Alinear a la izquierda">&#x2630;</button>
-            <button id="alignCenterButton" title="Alinear al centro">&#x2631;</button>
-            <button id="alignRightButton" title="Alinear a la derecha">&#x2632;</button>
+            <button id="boldButton" title="Negritas" onclick="negritas()"><b>B</b></button>
+            <button id="italicButton" title="Cursiva" onclick="cursiva()"><i>I</i></button>
+            <button id="underlineButton" title="Subrayado" onclick="subrayado()"><u>U</u></button>
+            <button id="strikeButton" title="Tachado" onclick="tachado()"><s>S</s></button>
+            <button id="alignLeftButton" title="Alinear a la izquierda" onclick="alinearIzquierda()">&#x2630;</button>
+            <button id="alignCenterButton" title="Alinear al centro" onclick="alinearCentro()">&#x2631;</button>
+            <button id="alignRightButton" title="Alinear a la derecha" onclick="alinearDerecha()">&#x2632;</button>
+            <button id="undoButton" title="Deshacer" onclick="undo()">&#x21B6;</button>
+            <button id="redoButton" title="Rehacer" onclick="endo()">&#x21B7;</button>
             <select id="fontSize" title="Tamaño de la fuente">
                 <option value="1">Pequeño</option>
                 <option value="3" selected>Mediano</option>
@@ -28,10 +31,10 @@
             <span id="resultCount">0 coincidencias</span>
         </div>
         <div id="textArea" contenteditable="true" class="text-area">
-            Escribe aquí tu texto...
+           
         </div>
     </div>
 
-    <script src="/JS/script.js"></script>
+    <script src="/JS/scriptDavid.js"></script>
 </body>
 </html>
