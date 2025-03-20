@@ -1,5 +1,7 @@
 body {
     font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -53,7 +55,7 @@ body {
     padding: 2vw;
     min-height: 300px;
     outline: none;
-    color: #fff;
+    color: black;
 }
 
 .highlight {
