@@ -6,21 +6,25 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f4f4f4;
+    width: auto;
+    background-color: rgb(51, 43, 43);
 }
 
 .editor {
-    width: 80%;
-    max-width: 800px;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    width: 90%;
+    height: 70%;
+    max-height: 70%;
+    max-width: 90%;
+    background-color: #b4a2a2;
+    border: 1px solid black;
+    padding: 2vw;
 }
 
 .toolbar {
+    border-radius: 20px;
     padding: 10px;
-    background-color: #f8f8f8;
-    border-bottom: 1px solid #ccc;
+    background-color: #575353;
     display: flex;
     gap: 10px;
     flex-wrap: wrap;
@@ -28,9 +32,11 @@ body {
 
 .toolbar button, .toolbar select, .toolbar input[type="color"] {
     padding: 5px 10px;
-    border: 1px solid #ccc;
+    border: 1px solid black;
     background-color: #fff;
     cursor: pointer;
+    border-radius: 20px;
+
 }
 
 .toolbar button:hover, .toolbar select:hover, .toolbar input[type="color"]:hover {
@@ -39,15 +45,17 @@ body {
 
 .toolbar input[type="text"] {
     padding: 5px;
-    border: 1px solid #ccc;
     flex-grow: 1;
+    border-radius: 20px;
+
 }
 
 .text-area {
-    padding: 10px;
+    font-size: larger;
+    padding: 2vw;
     min-height: 300px;
-    border: 1px solid #ccc;
     outline: none;
+    color: black;
 }
 
 .highlight {
@@ -55,6 +63,8 @@ body {
 }
 
 #resultCount {
+    display: flex;
+    align-self: center;
     margin-left: 10px;
-    color: #666;
+    color: #fff;
 }
