@@ -1,12 +1,37 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Editor Texto</title>
-  <link rel="stylesheet" href="/Styles/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editor de Texto</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  
+    <div class="editor">
+        <div class="toolbar">
+            <button id="boldButton" title="Negritas"><b>B</b></button>
+            <button id="italicButton" title="Cursiva"><i>I</i></button>
+            <button id="underlineButton" title="Subrayado"><u>U</u></button>
+            <button id="strikeButton" title="Tachado"><s>S</s></button>
+            <button id="alignLeftButton" title="Alinear a la izquierda">&#x2630;</button>
+            <button id="alignCenterButton" title="Alinear al centro">&#x2631;</button>
+            <button id="alignRightButton" title="Alinear a la derecha">&#x2632;</button>
+            <select id="fontSize" title="Tamaño de la fuente">
+                <option value="1">Pequeño</option>
+                <option value="3" selected>Mediano</option>
+                <option value="6">Grande</option>
+            </select>
+            <input type="color" id="colorPicker" title="Color del texto">
+            <button id="clearFormatButton" title="Limpiar formato">Limpiar</button>
+            <input type="text" id="searchInput" placeholder="Buscar palabra...">
+            <button id="searchButton">Buscar</button>
+            <span id="resultCount">0 coincidencias</span>
+        </div>
+        <div id="textArea" contenteditable="true" class="text-area">
+            Escribe aquí tu texto...
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
